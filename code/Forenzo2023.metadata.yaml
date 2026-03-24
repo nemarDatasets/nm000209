@@ -1,0 +1,104 @@
+_dataset:
+  class: Forenzo2023
+  code: Forenzo2023
+  doi: 10.1109/TBME.2023.3298957
+  interval:
+  - 0
+  - 4
+  n_subjects: 25
+  paradigm: imagery
+acquisition:
+  channel_types:
+    eeg: 64
+  filters:
+    lowpass: 200
+    notch_hz: 60
+  hardware: Neuroscan Quik-Cap 64-ch, SynAmps 2/RT
+  line_freq: 60.0
+  montage: standard_1005
+  n_channels: 64
+  reference: between Cz and CPz
+  sampling_rate: 1000.0
+  sensor_type: Ag/AgCl
+bci_application:
+  applications:
+  - cursor_control
+  environment: laboratory
+  online_feedback: true
+cross_validation:
+  evaluation_type:
+  - within_subject
+data_structure:
+  n_trials: 1875
+  trials_context: 25 subjects x 5 sessions x 3 MI runs x 5 trials
+documentation:
+  country: US
+  data_url: https://kilthub.cmu.edu/articles/dataset/23677098
+  doi: 10.1109/TBME.2023.3298957
+  institution: Carnegie Mellon University
+  institution_department: Department of Biomedical Engineering
+  investigators:
+  - Dylan Forenzo
+  - Yixuan Liu
+  - Jeehyun Kim
+  - Yidan Ding
+  - Taehyung Yoon
+  - Bin He
+  license: CC-BY-4.0
+  publication_year: 2023
+experiment:
+  class_labels:
+  - left_hand
+  - right_hand
+  events:
+    left_hand: 1
+    right_hand: 2
+  feedback_type: cursor
+  mode: online
+  n_classes: 2
+  paradigm: imagery
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  stimulus_type: continuous pursuit
+  study_design: 5-session BCI study with motor imagery (MI), overt spatial attention (OSA), and combined (MIOSA) tasks
+  synchronicity: synchronous
+  trial_duration: 6.0
+file_format: MAT
+paradigm_specific:
+  detected_paradigm: motor_imagery
+  imagery_duration_s: 6.0
+  imagery_tasks:
+  - left_hand
+  - right_hand
+participants:
+  age_mean: 25.5
+  bci_experience: mixed (19 naive, 6 experienced)
+  gender:
+    female: 10
+    male: 15
+  handedness: right-handed (24 of 25)
+  health_status: healthy
+  n_subjects: 25
+  species: human
+runs_per_session: 3
+sessions_per_subject: 5
+signal_processing:
+  classifiers:
+  - linear_classifier
+  feature_extraction:
+  - AR_spectral_estimation
+  - alpha_bandpower
+  frequency_bands:
+    alpha:
+    - 8.0
+    - 13.0
+  spatial_filters:
+  - Laplacian
+tags:
+  modality:
+  - Motor
+  pathology:
+  - Healthy
+  type:
+  - Research

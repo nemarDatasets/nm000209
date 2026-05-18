@@ -1,0 +1,111 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Dylan Forenzo": {
+      "orcid": "0000-0002-2661-7434",
+      "affiliations": [
+        {
+          "name": "Department of Biomedical Engineering, Carnegie Mellon University, Pittsburgh, PA, USA"
+        }
+      ]
+    },
+    "Yixuan Liu": {},
+    "Jeehyun Kim": {
+      "orcid": "0009-0006-1159-589X",
+      "affiliations": [
+        {
+          "name": "Department of Biomedical Engineering, Carnegie Mellon University, Pittsburgh, PA, USA"
+        }
+      ]
+    },
+    "Yidan Ding": {},
+    "Taehyung Yoon": {
+      "orcid": "0009-0006-7347-564X",
+      "affiliations": [
+        {
+          "name": "Department of Biomedical Engineering, Carnegie Mellon University, Pittsburgh, PA, USA"
+        }
+      ]
+    },
+    "Bin He": {
+      "orcid": "0000-0003-2944-8602",
+      "affiliations": [
+        {
+          "name": "Department of Biomedical Engineering, Carnegie Mellon University, Pittsburgh, PA, USA"
+        }
+      ]
+    }
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.1109/TBME.2023.3298957",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000209",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000209",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    }
+  ],
+  "title": "Motor imagery + spatial attention dataset from Forenzo & He 2023",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "5.3 GB (151 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "This dataset comprises EEG recordings from 25 healthy participants performing motor imagery and spatial attention tasks across five sessions. The study investigates the integration of simultaneous motor imagery and overt spatial attention for brain-computer interface control, with participants performing left-hand and right-hand imagery tasks in an online, synchronous BCI paradigm with visual cursor feedback. Data were acquired using a 64-channel Neuroscan system at 1000 Hz sampling rate.",
+  "methods_description": "EEG data were collected from 25 healthy right-handed participants (mean age 25.5 years) using a 64-channel Neuroscan Quik-Cap with SynAmps 2/RT amplifier at 1000 Hz sampling rate. The reference electrode was positioned between Cz and CPz. Online filters included a 200 Hz lowpass filter and 60 Hz notch filter. Participants completed 5 sessions with 3 runs per session, performing motor imagery tasks (left-hand and right-hand) with visual cursor feedback in a synchronous, online BCI paradigm. Trial duration was 6 seconds with a 4-second analysis window.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "spatial attention"
+    },
+    {
+      "term": "cursor control"
+    },
+    {
+      "term": "BCI paradigm"
+    }
+  ],
+  "source_hash": "fb4d5f10f591ab727dfa5dccd087ab2d88f8de14c067cdd5089dc8cc705ef571"
+}

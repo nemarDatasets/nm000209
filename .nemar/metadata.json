@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "Motor imagery + spatial attention dataset from Forenzo & He 2023",
+  "description": "This dataset comprises EEG recordings from 25 healthy participants performing motor imagery and spatial attention tasks across five sessions. The study integrates simultaneous motor imagery (left and right hand) with overt spatial attention in an online brain-computer interface paradigm, featuring 64-channel recordings at 1000 Hz with cursor feedback. The dataset includes 1,875 trials collected during synchronized, laboratory-based BCI experiments designed to investigate the combined effects of motor imagery and spatial attention on EEG-based control. This is a derivative dataset based on the original study by Forenzo & He (2023).",
+  "methods_description": "EEG data were acquired using a Neuroscan Quik-Cap 64-channel system with SynAmps 2/RT amplifier at 1000 Hz sampling rate. The electrode montage followed the standard 1005 placement with reference between Cz and CPz. Online filters included a 200 Hz lowpass filter and 60 Hz notch filter. Participants performed motor imagery tasks (left and right hand imagination) during continuous visual pursuit with cursor feedback in a synchronous, online BCI paradigm across 5 sessions with 3 runs per session.",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
   "authors": {
     "Dylan Forenzo": {
       "orcid": "0000-0002-2661-7434",
@@ -37,6 +42,38 @@
       ]
     }
   },
+  "keywords": [
+    {
+      "term": "EEG",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "motor imagery",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D019018"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "spatial attention",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000070379"
+    },
+    {
+      "term": "cursor control",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D003299"
+    },
+    {
+      "term": "motor cortex",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D009044"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.1109/TBME.2023.3298957",
@@ -64,14 +101,11 @@
       "relation_type": "References"
     }
   ],
-  "title": "Motor imagery + spatial attention dataset from Forenzo & He 2023",
-  "license": "CC-BY-4.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
     "5.3 GB (151 files)"
   ],
@@ -83,29 +117,5 @@
     ".yaml",
     ".yml"
   ],
-  "description": "This dataset comprises EEG recordings from 25 healthy participants performing motor imagery and spatial attention tasks across five sessions. The study investigates the integration of simultaneous motor imagery and overt spatial attention for brain-computer interface control, with participants performing left-hand and right-hand imagery tasks in an online, synchronous BCI paradigm with visual cursor feedback. Data were acquired using a 64-channel Neuroscan system at 1000 Hz sampling rate.",
-  "methods_description": "EEG data were collected from 25 healthy right-handed participants (mean age 25.5 years) using a 64-channel Neuroscan Quik-Cap with SynAmps 2/RT amplifier at 1000 Hz sampling rate. The reference electrode was positioned between Cz and CPz. Online filters included a 200 Hz lowpass filter and 60 Hz notch filter. Participants completed 5 sessions with 3 runs per session, performing motor imagery tasks (left-hand and right-hand) with visual cursor feedback in a synchronous, online BCI paradigm. Trial duration was 6 seconds with a 4-second analysis window.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "motor imagery"
-    },
-    {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "spatial attention"
-    },
-    {
-      "term": "cursor control"
-    },
-    {
-      "term": "BCI paradigm"
-    }
-  ],
-  "source_hash": "fb4d5f10f591ab727dfa5dccd087ab2d88f8de14c067cdd5089dc8cc705ef571"
+  "source_hash": "c9545c3285c5e189777114e62d805a869de41d2a693dc7f213184e7199159360"
 }

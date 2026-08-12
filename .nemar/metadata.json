@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Motor imagery + spatial attention dataset from Forenzo & He 2023",
-  "description": "This dataset comprises EEG recordings from 25 healthy participants performing motor imagery and spatial attention tasks across five sessions. The study investigates the integration of simultaneous motor imagery and overt spatial attention (MIOSA) for brain-computer interface control, with participants performing left-hand and right-hand imagery tasks while receiving visual cursor feedback. Data were acquired using a 64-channel Neuroscan system at 1000 Hz sampling rate.",
-  "methods_description": "EEG data were collected from 25 healthy right-handed participants (mean age 25.5 years) using a 64-channel Neuroscan Quik-Cap with SynAmps 2/RT amplifier. Sampling rate was 1000 Hz with reference between Cz and CPz. Online filters included a 200 Hz lowpass filter and 60 Hz notch filter. Participants performed motor imagery tasks (left-hand and right-hand) across 5 sessions with 3 runs per session, each containing 5 trials of 6-second duration. Visual feedback was provided via cursor control during online BCI operation.",
+  "description": "This dataset comprises EEG recordings from 25 healthy participants performing motor imagery and spatial attention tasks across five sessions. The study investigates the integration of simultaneous motor imagery and overt spatial attention for brain-computer interface control, with participants performing left-hand and right-hand imagery tasks while receiving visual cursor feedback. Data were acquired using a 64-channel Neuroscan system at 1000 Hz sampling rate, yielding 1875 trials suitable for BCI classifier development and evaluation.",
+  "methods_description": "EEG data were acquired from 25 healthy right-handed participants (mean age 25.5 years) using a 64-channel Neuroscan Quik-Cap with SynAmps 2/RT amplifier at 1000 Hz sampling rate. The reference electrode was positioned between Cz and CPz. Online filters included a 200 Hz lowpass filter and 60 Hz notch filter. Participants completed 5 sessions with 3 motor imagery runs per session, each containing 5 trials of left-hand or right-hand imagery lasting 6 seconds, with visual cursor feedback provided in real-time.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -61,7 +61,7 @@
       "term": "cursor control"
     },
     {
-      "term": "motor cortex"
+      "term": "BCI paradigm"
     }
   ],
   "related_identifiers": [
@@ -76,11 +76,6 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000209",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
       "relation_type": "References"
@@ -89,6 +84,11 @@
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000209",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
@@ -97,15 +97,17 @@
     "eeg"
   ],
   "sizes": [
-    "5.3 GB (151 files)"
+    "197.5 GB (2201 files)"
   ],
   "formats": [
     ".bdf",
     ".json",
+    ".mat",
     ".md",
     ".tsv",
     ".yaml",
-    ".yml"
+    ".yml",
+    ".zip"
   ],
-  "source_hash": "a1aeebbd90d0ace269c96b6ca594789c728a2a56b2b876171ee76e2c82f854ea"
+  "source_hash": "61b1b8da35967cf52e0d5740b7d4ff4d8b69fd90a3e625bfdf346bb8f93e1839"
 }

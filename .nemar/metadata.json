@@ -3,7 +3,7 @@
   "pipeline_stage": "enriched",
   "title": "Motor imagery + spatial attention dataset from Forenzo & He 2023",
   "description": "This dataset comprises EEG recordings from 25 healthy participants performing motor imagery and spatial attention tasks across five sessions. The study investigates the integration of simultaneous motor imagery and overt spatial attention for brain-computer interface control, with participants performing left-hand and right-hand imagery tasks while receiving visual cursor feedback. Data were acquired using a 64-channel Neuroscan system at 1000 Hz sampling rate, yielding 1875 trials suitable for BCI classifier development and evaluation.",
-  "methods_description": "EEG data were acquired from 25 healthy right-handed participants (mean age 25.5 years) using a 64-channel Neuroscan Quik-Cap with SynAmps 2/RT amplifier at 1000 Hz sampling rate. The reference electrode was positioned between Cz and CPz. Online filters included a 200 Hz lowpass filter and 60 Hz notch filter. Participants completed 5 sessions with 3 motor imagery runs per session, each containing 5 trials of left-hand or right-hand imagery lasting 6 seconds, with visual cursor feedback provided in real-time.",
+  "methods_description": "EEG data were acquired from 25 healthy right-handed participants (24 of 25; mean age 25.5 years) using a 64-channel Neuroscan Quik-Cap with SynAmps 2/RT amplifier at 1000 Hz sampling rate. The reference electrode was positioned between Cz and CPz. Online filters included a 200 Hz lowpass filter and 60 Hz notch filter. Participants completed 5 sessions with 3 motor imagery runs per session, performing left-hand and right-hand imagery tasks with visual cursor feedback in a synchronous, online BCI paradigm.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -61,7 +61,7 @@
       "term": "cursor control"
     },
     {
-      "term": "BCI paradigm"
+      "term": "BCI classification"
     }
   ],
   "related_identifiers": [
@@ -109,5 +109,5 @@
     ".yml",
     ".zip"
   ],
-  "source_hash": "61b1b8da35967cf52e0d5740b7d4ff4d8b69fd90a3e625bfdf346bb8f93e1839"
+  "source_hash": "eb4bf9699cec9024aaa86de26ac11729b7382c1df450e3a08e58e3816b40adf4"
 }

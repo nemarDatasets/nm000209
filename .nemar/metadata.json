@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Motor imagery + spatial attention dataset from Forenzo & He 2023",
-  "description": "This dataset comprises EEG recordings from 25 healthy participants performing motor imagery and spatial attention tasks across five sessions. The study investigates the integration of simultaneous motor imagery and overt spatial attention for brain-computer interface control, with participants performing left-hand and right-hand imagery tasks while receiving visual cursor feedback. Data were acquired using a 64-channel Neuroscan system at 1000 Hz sampling rate, yielding 1875 trials suitable for BCI classifier development and evaluation.",
-  "methods_description": "EEG data were acquired from 25 healthy right-handed participants (24 of 25; mean age 25.5 years) using a 64-channel Neuroscan Quik-Cap with SynAmps 2/RT amplifier at 1000 Hz sampling rate. The reference electrode was positioned between Cz and CPz. Online filters included a 200 Hz lowpass filter and 60 Hz notch filter. Participants completed 5 sessions with 3 motor imagery runs per session, performing left-hand and right-hand imagery tasks with visual cursor feedback in a synchronous, online BCI paradigm.",
+  "description": "This dataset contains EEG recordings from 25 healthy human subjects performing a multi-session brain-computer interface (BCI) study combining motor imagery (MI) and overt spatial attention (OSA) tasks, including a combined MIOSA condition. Subjects imagined left- or right-hand movements to control a cursor via continuous visual feedback across five sessions with three motor imagery runs each. The dataset was converted to BIDS format using MOABB and is derived from the original study by Forenzo & He (2023) investigating integration of motor imagery and spatial attention for EEG-BCI control.",
+  "methods_description": "EEG data were recorded using a 64-channel Neuroscan Quik-Cap with SynAmps 2/RT amplifiers at a 1000 Hz sampling rate, referenced between Cz and CPz, following the standard_1005 montage. Online filters included a lowpass at 200 Hz and a 60 Hz notch filter. Participants performed motor imagery tasks (left_hand, right_hand) with 6-second trial durations, synchronous online feedback via cursor control, and continuous visual pursuit stimuli. Signal processing involved AR spectral estimation, alpha bandpower feature extraction (8-13 Hz), Laplacian spatial filtering, and linear classification evaluated within-subject.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -52,6 +52,7 @@
     {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
@@ -61,7 +62,7 @@
       "term": "cursor control"
     },
     {
-      "term": "BCI classification"
+      "term": "HED annotation"
     }
   ],
   "related_identifiers": [
@@ -109,5 +110,5 @@
     ".yml",
     ".zip"
   ],
-  "source_hash": "eb4bf9699cec9024aaa86de26ac11729b7382c1df450e3a08e58e3816b40adf4"
+  "source_hash": "37cdd80d7ba8c1425febd8d30e883c7523d9a14c52e7046e362d046d4dafca9e"
 }

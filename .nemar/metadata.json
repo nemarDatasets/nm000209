@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Motor imagery + spatial attention dataset from Forenzo & He 2023",
-  "description": "This dataset contains EEG recordings from 25 healthy human subjects performing a multi-session brain-computer interface (BCI) study combining motor imagery (MI) and overt spatial attention (OSA) tasks, including a combined MIOSA condition. Subjects imagined left- or right-hand movements to control a cursor via continuous visual feedback across five sessions with three motor imagery runs each. The dataset was converted to BIDS format using MOABB and is derived from the original study by Forenzo & He (2023) investigating integration of motor imagery and spatial attention for EEG-BCI control.",
-  "methods_description": "EEG data were recorded using a 64-channel Neuroscan Quik-Cap with SynAmps 2/RT amplifiers at a 1000 Hz sampling rate, referenced between Cz and CPz, following the standard_1005 montage. Online filters included a lowpass at 200 Hz and a 60 Hz notch filter. Participants performed motor imagery tasks (left_hand, right_hand) with 6-second trial durations, synchronous online feedback via cursor control, and continuous visual pursuit stimuli. Signal processing involved AR spectral estimation, alpha bandpower feature extraction (8-13 Hz), Laplacian spatial filtering, and linear classification evaluated within-subject.",
+  "description": "EEG dataset from 25 healthy participants performing a cursor-control brain-computer interface task across five sessions. The study combined motor imagery, overt spatial attention, and simultaneous motor imagery with spatial attention (MIOSA), with online visual cursor feedback. Recordings used 64 channels at 1000 Hz, and this release provides left-hand versus right-hand motor imagery trials.",
+  "methods_description": "64-channel EEG was recorded with a Neuroscan Quik-Cap and SynAmps 2/RT amplifier at 1000 Hz, referenced between Cz and CPz, with a 200 Hz lowpass and 60 Hz notch online. Each participant completed 5 sessions of 3 motor imagery runs with 5 trials each, controlling a cursor in continuous pursuit with online feedback. Control used alpha-band power from autoregressive spectral estimation with Laplacian spatial filtering and a linear classifier.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -47,13 +47,12 @@
       "term": "EEG"
     },
     {
-      "term": "motor imagery"
-    },
-    {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "Motor imagery"
     },
     {
       "term": "spatial attention"
@@ -62,7 +61,7 @@
       "term": "cursor control"
     },
     {
-      "term": "HED annotation"
+      "term": "alpha rhythm"
     }
   ],
   "related_identifiers": [
@@ -98,7 +97,7 @@
     "eeg"
   ],
   "sizes": [
-    "197.5 GB (2201 files)"
+    "184 GB (2201 files)"
   ],
   "formats": [
     ".bdf",
